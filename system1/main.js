@@ -20,6 +20,12 @@ function display(){
   console.log("b--------堵塞进程");
   console.log("a--------激活进程");
   console.log("t--------时间片用完进程");
+  console.log('s-----------展示进程')
+  console.log("f--------输入内存大小位示图");
+  console.log("h--------输入进程大小");
+  console.log("g--------显示页表");
+  console.log("k--------录入逻辑地址");
+  console.log("l--------输入块号和页面引用串 方法");
   console.log("e--------退出");
 
 }
@@ -34,6 +40,31 @@ function menu(){
 		Fun.createQpcb(arr[1]);
 		console.log(Fun.view());
 		break;
+		}
+		case 's':{
+			console.log(Fun.view());
+			break;
+		}
+		case 'f':{
+			Fun.memoryPosition(arr[1],arr[2]);
+			break;
+		}
+		case 'h':{
+			Fun.getNum(arr[1]);
+			break;
+		}
+		case 'g':{
+			Fun.getPage();
+			break;
+		}
+		case 'l':{
+			 Fun.displace(arr[1],arr[2],arr[3]);
+			break;
+			
+		}
+		case 'k':{
+			Fun.changeNum(arr[1]);
+			break;
 		}
 		case 'c':{
 			Fun.processCtr();
