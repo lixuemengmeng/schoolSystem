@@ -149,5 +149,6 @@ Fun.prototype={
 		 return '就绪队列为'+ready.displayAll()+'执行队列为'+run.displayAll()+'阻塞队列为'+block.displayAll();
 		
 	}
+
 }
 module.exports=Fun;
